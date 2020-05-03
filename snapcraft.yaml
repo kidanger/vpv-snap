@@ -18,7 +18,6 @@ parts:
     source-branch: dev
     configflags:
     - -DCMAKE_BUILD_TYPE=Release
-    - -DDESTDIR=
     build-packages:
     - g++
     - make
@@ -65,7 +64,6 @@ parts:
 apps:
   vpv:
     command: vpv
-    desktop: share/applications/vpv.desktop
     plugs:
     - opengl
     - desktop
