@@ -1,6 +1,6 @@
 name: vpv
 base: core18
-version: 0.4.0-dev
+version: 0.5.0
 summary: Image viewer
 description: |
   Image viewer for image processing experts
@@ -13,7 +13,7 @@ parts:
     plugin: cmake
     source: https://github.com/kidanger/vpv
     source-type: git
-    source-branch: dev
+    source-branch: master
     configflags:
     - -DCMAKE_BUILD_TYPE=Release
     build-packages:
