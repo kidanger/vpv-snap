@@ -4,5 +4,5 @@ Name=vpv
 GenericName=Image viewer
 Categories=Viewer;
 Exec=vpv %F
-Icon=${SNAP}/meta/gui/vpv.png
+Icon=${SNAP}/meta/gui/vpv.svg
 MimeType=image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/tiff;
