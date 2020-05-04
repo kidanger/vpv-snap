@@ -1,23 +1,25 @@
 name: vpv
-base: core18
-#version: 0.5.0
-version: git
+adopt-info: vpv
 summary: Image viewer
 description: |
   Image viewer for image processing experts
 
+base: core18
 grade: stable
 confinement: strict
 
 parts:
   vpv:
     plugin: cmake
-    source: https://github.com/kidanger/vpv
+    source: https://github.com/kidanger/vpv.git
     source-type: git
     source-branch: dev
     configflags:
     - -DCMAKE_BUILD_TYPE=Release
     - -DUSE_GDAL=ON
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags)"
     build-packages:
     - g++
     - make
