@@ -17,6 +17,7 @@ parts:
     source-branch: dev
     configflags:
     - -DCMAKE_BUILD_TYPE=Release
+    - -DUSE_GDAL=ON
     build-packages:
     - g++
     - make
@@ -24,6 +25,7 @@ parts:
     - libpng-dev
     - libtiff-dev
     - libjpeg-dev
+    - libgdal-dev
     stage-packages:
     - libasound2
     - libasyncns0
@@ -59,6 +61,68 @@ parts:
     - libxrender1
     - libxss1
     - libxxf86vm1
+    - libaec0
+    - libarmadillo8
+    - libarpack2
+    - libasn1-8-heimdal
+    - libcurl3-gnutls
+    - libdap25
+    - libdapclient6v5
+    - libepsilon1
+    - libfontconfig1
+    - libfreetype6
+    - libfreexl1
+    - libfyba0
+    - libgdal20
+    - libgeos-3.6.2
+    - libgeos-c1v5
+    - libgeotiff2
+    - libgfortran4
+    - libgif7
+    - libgssapi3-heimdal
+    - libhcrypto4-heimdal
+    - libhdf4-0-alt
+    - libhdf5-100
+    - libheimbase1-heimdal
+    - libheimntlm0-heimdal
+    - libhx509-5-heimdal
+    - libicu60
+    - libkmlbase1
+    - libkmldom1
+    - libkmlengine1
+    - libkrb5-26-heimdal
+    - liblcms2-2
+    - libldap-2.4-2
+    - libltdl7
+    - libminizip1
+    - libmysqlclient20
+    - libnetcdf13
+    - libnghttp2-14
+    - libnspr4
+    - libnss3
+    - libodbc1
+    - libogdi3.2
+    - libopenjp2-7
+    - libpoppler73
+    - libpq5
+    - libproj12
+    - libpsl5
+    - libqhull7
+    - libquadmath0
+    - libroken18-heimdal
+    - librtmp1
+    - libsasl2-2
+    - libspatialite7
+    - libsuperlu5
+    - libsz2
+    - liburiparser1
+    - libwebp6
+    - libwind0-heimdal
+    - libxerces-c3.2
+    - libxml2
+    - odbcinst1debian2
+    - libblas3
+    - liblapack3
 
 apps:
   vpv:
