@@ -10,6 +10,7 @@ confinement: strict
 
 parts:
   vpv:
+    build-snaps: [cmake]
     plugin: cmake
     source: https://github.com/kidanger/vpv.git
     source-type: git
